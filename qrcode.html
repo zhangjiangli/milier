@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="code"></div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.qrcode.min.js"></script>
+<script>
+    // $('#code').qrcode("http://www.helloweba.com")
+    $("#code").qrcode({
+        render: "table", //table方式 
+        width: 200, //宽度 
+        height: 200, //高度 
+        text: "https://www.baidu.com" //任意内容 
+    });
+     
+    // qrcodeObj.makeCode('http://live.seedland.cc/sddc/pc/index.html')
+</script>
+
+</html>
